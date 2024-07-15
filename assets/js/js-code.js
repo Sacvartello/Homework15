@@ -34,12 +34,22 @@ for(lineCount = 1; lineCount <= mustHaveline; lineCount ++) {
     sumbol = sumbol + "*"
 }
 // 6
-let londOfSide= null
-do {
-    londOfSidee = Number(prompt("Введіть кількість рядків у піраміді:"))
-} while (!Number.isFinite(londOfSide));
-for(starCount = 1; starCount <= londOfSidee; starCount ++) {
-    console.log(sumbol)
-    sumbol = sumbol + "*"
-}
-
+console.log(
+    `
+     ***********
+     * *       *
+     *   *     *
+     *     *   *
+     *       * *
+     ***********
+     `)
+// 7
+console.log(
+    `
+     ***********
+     *       * *
+     *     *   *
+     *   *     *
+     * *       *
+     ***********
+     `)
