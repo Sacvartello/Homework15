@@ -28,28 +28,25 @@ let mustHaveline = null
 do {
     mustHaveline = Number(prompt("Введіть кількість рядків у піраміді:"))
 } while (!Number.isFinite(mustHaveline));
-let sumbol = "*"
+let star = "*"
 for(lineCount = 1; lineCount <= mustHaveline; lineCount ++) {
-    console.log(sumbol)
-    sumbol = sumbol + "*"
+    console.log(star)
+    star = star + "*"
 }
-// 6
-console.log(
-    `
-     ***********
-     * *       *
-     *   *     *
-     *     *   *
-     *       * *
-     ***********
-     `)
-// 7
-console.log(
-    `
-     ***********
-     *       * *
-     *     *   *
-     *   *     *
-     * *       *
-     ***********
-     `)
+//6
+let line = ''
+console.log('********');
+for(i = 2; i < 8; i ++){
+    line = line + '*'
+    for(k = 2; k < 8; k ++){
+        if (i === k){
+            line = line + '*'
+        } else {
+            line = line + ' '
+        }
+    }
+    line = line + '*'
+    console.log(line);
+    line = ''
+}
+console.log('********');
